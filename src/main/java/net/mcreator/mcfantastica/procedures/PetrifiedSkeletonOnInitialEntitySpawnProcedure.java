@@ -55,7 +55,7 @@ public class PetrifiedSkeletonOnInitialEntitySpawnProcedure extends MCFantastica
 										.getBlock()))))) {
 					if ((!(entity.isBurning()))) {
 						if ((!(world.isRemote))) {
-							entity.setFire((int) 5);
+							entity.setFire((int) 100);
 						}
 					}
 				}
