@@ -13,11 +13,15 @@
     "harvestLevel": 2,
     "efficiency": 6.0,
     "attackSpeed": 1.0,
-    "enchantability": 14,
-    "damageVsEntity": 2.0,
-    "usageCount": 250,
+    "enchantability": 17,
+    "damageVsEntity": 6.0,
+    "usageCount": 750,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:CobaltIngot"
+      }
+    ]
   }
 }

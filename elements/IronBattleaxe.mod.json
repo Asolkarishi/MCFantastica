@@ -10,14 +10,14 @@
       "value": "COMBAT"
     },
     "stackSize": 1,
-    "enchantability": 0,
-    "useDuration": 100,
-    "toolType": 2.0,
+    "enchantability": 17,
+    "useDuration": 255,
+    "toolType": 1.5,
     "damageCount": 5,
-    "destroyAnyBlock": false,
+    "destroyAnyBlock": true,
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": false,
-    "damageVsEntity": 7.0,
+    "damageVsEntity": 8.0,
     "specialInfo": [],
     "hasGlow": false
   }

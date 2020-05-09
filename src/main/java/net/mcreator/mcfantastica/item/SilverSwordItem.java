@@ -46,7 +46,7 @@ public class SilverSwordItem extends MCFantasticaElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(SilverIngotItem.block, (int) (1)));
 			}
-		}, 3, -2.5f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -2.7f, new Item.Properties().group(ItemGroup.COMBAT)) {
 		}.setRegistryName("silversword"));
 	}
 }

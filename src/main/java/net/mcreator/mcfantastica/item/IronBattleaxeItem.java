@@ -30,17 +30,22 @@ public class IronBattleaxeItem extends MCFantasticaElements.ModElement {
 
 		@Override
 		public int getItemEnchantability() {
-			return 0;
+			return 17;
 		}
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 100;
+			return 255;
 		}
 
 		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
-			return 2F;
+			return 1.5F;
+		}
+
+		@Override
+		public boolean canHarvestBlock(BlockState state) {
+			return true;
 		}
 	}
 }
