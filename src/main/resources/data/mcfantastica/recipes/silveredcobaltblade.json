@@ -1,0 +1,24 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "4": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "6": {
+      "item": "mcfantastica:silveredcobalthiltitem"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:silveredcobaltbladeitem",
+    "count": 1
+  }
+}

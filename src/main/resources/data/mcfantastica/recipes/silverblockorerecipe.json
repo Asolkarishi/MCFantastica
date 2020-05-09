@@ -1,0 +1,13 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mcfantastica:silveroreblock"
+    }
+  ],
+  "result": {
+    "item": "mcfantastica:silveringot",
+    "count": 9
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "1": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "2": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:cobaltpickaxe",
+    "count": 1
+  }
+}

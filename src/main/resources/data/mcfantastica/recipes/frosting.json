@@ -1,0 +1,36 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "1": {
+      "item": "minecraft:bone_meal"
+    },
+    "2": {
+      "item": "minecraft:purple_dye"
+    },
+    "3": {
+      "item": "minecraft:sugar"
+    },
+    "4": {
+      "item": "minecraft:sweet_berries"
+    },
+    "5": {
+      "item": "minecraft:sugar"
+    },
+    "7": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:frosting",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:smelting",
+  "experience": 0.8400000000000001,
+  "ingredient": {
+    "item": "mcfantastica:silverore"
+  },
+  "result": {
+    "item": "mcfantastica:silveringot"
+  }
+}

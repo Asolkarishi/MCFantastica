@@ -1,0 +1,13 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mcfantastica:cobaltoreblock"
+    }
+  ],
+  "result": {
+    "item": "mcfantastica:cobaltingot",
+    "count": 9
+  }
+}

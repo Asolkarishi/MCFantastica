@@ -1,0 +1,42 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "mcfantastica:petrifiedbone"
+    },
+    "1": {
+      "item": "mcfantastica:petrifiedbone"
+    },
+    "2": {
+      "item": "mcfantastica:petrifiedbone"
+    },
+    "3": {
+      "item": "mcfantastica:petrifiedbone"
+    },
+    "4": {
+      "item": "mcfantastica:ironhammer"
+    },
+    "5": {
+      "item": "mcfantastica:petrifiedbone"
+    },
+    "6": {
+      "item": "mcfantastica:petrifiedbone"
+    },
+    "7": {
+      "item": "mcfantastica:petrifiedbone"
+    },
+    "8": {
+      "item": "mcfantastica:petrifiedbone"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:petrifiedpowder",
+    "count": 8
+  }
+}

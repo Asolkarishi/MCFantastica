@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "mcfantastica:block/bloodwood"
+    },
+    "facing=north": {
+      "model": "mcfantastica:block/bloodwood"
+    },
+    "facing=east": {
+      "model": "mcfantastica:block/bloodwood",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "mcfantastica:block/bloodwood",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "mcfantastica:block/bloodwood",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "mcfantastica:block/bloodwood",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

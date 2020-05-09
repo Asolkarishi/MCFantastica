@@ -1,0 +1,42 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "mcfantastica:silveringot"
+    },
+    "1": {
+      "item": "mcfantastica:silveringot"
+    },
+    "2": {
+      "item": "mcfantastica:silveringot"
+    },
+    "3": {
+      "item": "mcfantastica:silveringot"
+    },
+    "4": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "5": {
+      "item": "mcfantastica:silveringot"
+    },
+    "6": {
+      "item": "mcfantastica:silveringot"
+    },
+    "7": {
+      "item": "mcfantastica:silveringot"
+    },
+    "8": {
+      "item": "mcfantastica:silveringot"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:silveredcobalt",
+    "count": 1
+  }
+}

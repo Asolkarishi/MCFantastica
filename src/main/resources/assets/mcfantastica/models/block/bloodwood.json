@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mcfantastica:blocks/bloodwoodtop",
+    "up": "mcfantastica:blocks/bloodwoodtop",
+    "north": "mcfantastica:blocks/bloodwoodbark",
+    "east": "mcfantastica:blocks/bloodwoodbark",
+    "south": "mcfantastica:blocks/bloodwoodbark",
+    "west": "mcfantastica:blocks/bloodwoodbark",
+    "particle": "mcfantastica:blocks/bloodwoodtop"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "mcfantastica:silveringot"
+    },
+    "2": {
+      "item": "mcfantastica:silveringot"
+    },
+    "3": {
+      "item": "mcfantastica:silveringot"
+    },
+    "5": {
+      "item": "mcfantastica:silveringot"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:silverarmorboots",
+    "count": 1
+  }
+}

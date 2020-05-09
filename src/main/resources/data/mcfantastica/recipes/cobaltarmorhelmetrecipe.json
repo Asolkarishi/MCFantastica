@@ -1,0 +1,29 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "1": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "2": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "3": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "5": {
+      "item": "mcfantastica:cobaltingot"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:cobaltarmorhelmet",
+    "count": 1
+  }
+}

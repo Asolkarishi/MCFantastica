@@ -1,0 +1,66 @@
+{
+  "_fv": 6,
+  "_type": "biome",
+  "definition": {
+    "name": "Blood Swamp",
+    "groundBlock": {
+      "value": "CUSTOM:BloodPeat"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:BloodStone"
+    },
+    "generateLakes": true,
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 10,
+    "spawnVines": false,
+    "treeVines": {
+      "value": "CUSTOM:BloodLeaves"
+    },
+    "treeStem": {
+      "value": "CUSTOM:BloodWood"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:BloodLeaves"
+    },
+    "treeFruits": {
+      "value": "CUSTOM:BloodLeaves"
+    },
+    "customColors": true,
+    "airColor": {
+      "value": -9276814,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -13433081,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -11662067,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 4,
+    "grassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 1,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "deadBushesPerChunk": 2,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "spawnBiome": true,
+    "biomeWeight": 7,
+    "biomeType": "WARM",
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "biomeDictionaryTypes": [],
+    "spawnList": []
+  }
+}

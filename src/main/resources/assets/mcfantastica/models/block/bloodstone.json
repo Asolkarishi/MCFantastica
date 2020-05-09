@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mcfantastica:blocks/bloodpeatbottom",
+    "up": "mcfantastica:blocks/bloodpeatbottom",
+    "north": "mcfantastica:blocks/bloodpeatbottom",
+    "east": "mcfantastica:blocks/bloodpeatbottom",
+    "south": "mcfantastica:blocks/bloodpeatbottom",
+    "west": "mcfantastica:blocks/bloodpeatbottom",
+    "particle": "mcfantastica:blocks/bloodpeatbottom"
+  }
+}

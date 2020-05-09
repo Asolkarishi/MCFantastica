@@ -1,0 +1,39 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "2": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "3": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "4": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "5": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "6": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "7": {
+      "item": "mcfantastica:cobaltingot"
+    },
+    "8": {
+      "item": "mcfantastica:cobaltingot"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:cobaltarmorbody",
+    "count": 1
+  }
+}

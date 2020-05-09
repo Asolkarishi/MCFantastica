@@ -1,0 +1,24 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "mcfantastica:silveredcobalt"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "mcfantastica:silveringot"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:silveredcobalthiltitem",
+    "count": 1
+  }
+}
