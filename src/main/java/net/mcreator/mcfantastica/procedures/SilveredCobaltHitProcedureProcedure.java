@@ -43,7 +43,7 @@ public class SilveredCobaltHitProcedureProcedure extends MCFantasticaElements.Mo
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 100, (int) 3));
+			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 50, (int) 2));
 		world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), Blocks.SNOW.getDefaultState(), 3);
 		world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
