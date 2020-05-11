@@ -90,7 +90,7 @@ public class MinisculeBearEntity extends MCFantasticaElements.ModElement {
 		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
 			return new MobRenderer(renderManager, new PigModel(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("mcfantastica:textures/bearoror.png");
+					return new ResourceLocation("mcfantastica:textures/bear0.png");
 				}
 			};
 		});
@@ -115,7 +115,7 @@ public class MinisculeBearEntity extends MCFantasticaElements.ModElement {
 			this.goalSelector.addGoal(4, new SwimGoal(this));
 			this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.8));
 			this.goalSelector.addGoal(6, new PanicGoal(this, 1.2));
-			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
+			this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 		}
 
 		@Override
