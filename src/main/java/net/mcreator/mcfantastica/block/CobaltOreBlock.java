@@ -81,7 +81,7 @@ public class CobaltOreBlock extends MCFantasticaElements.ModElement {
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 7), Placement.COUNT_RANGE, new CountRangeConfig(11, 1, 1, 63)));
+			}), block.getDefaultState(), 7), Placement.COUNT_RANGE, new CountRangeConfig(11, 7, 7, 45)));
 		}
 	}
 }

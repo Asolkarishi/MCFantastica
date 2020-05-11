@@ -1,0 +1,30 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "silvercobaltblade",
+    "customModelName": "Normal",
+    "name": "Blade of Ice",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 3,
+    "efficiency": 4.0,
+    "attackSpeed": 1.8,
+    "enchantability": 11,
+    "damageVsEntity": 8.0,
+    "usageCount": 1024,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SilveredCobalt"
+      }
+    ],
+    "onEntityHitWith": {
+      "name": "SilveredCobaltHitProcedure"
+    }
+  }
+}

@@ -28,8 +28,8 @@
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "Not specified",
-    "affectedBySilkTouch": true,
+    "destroyTool": "shovel",
+    "affectedBySilkTouch": false,
     "customDrop": {
       "value": ""
     },
@@ -79,11 +79,7 @@
     "inventoryOutSlotIDs": [],
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
