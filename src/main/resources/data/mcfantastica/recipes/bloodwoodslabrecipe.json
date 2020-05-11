@@ -1,0 +1,22 @@
+{
+  "group": "mcfantastica",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "mcfantastica:bloodwoodplank"
+    },
+    "1": {
+      "item": "mcfantastica:bloodwoodplank"
+    },
+    "2": {
+      "item": "mcfantastica:bloodwoodplank"
+    }
+  },
+  "result": {
+    "item": "mcfantastica:bloodwoodslab",
+    "count": 1
+  }
+}

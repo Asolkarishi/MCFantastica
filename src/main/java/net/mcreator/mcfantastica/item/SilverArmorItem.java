@@ -40,7 +40,7 @@ public class SilverArmorItem extends MCFantasticaElements.ModElement {
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{2, 7, 6, 2}[slot.getIndex()];
+				return new int[]{2, 5, 6, 2}[slot.getIndex()];
 			}
 
 			public int getEnchantability() {

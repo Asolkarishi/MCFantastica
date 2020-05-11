@@ -25,7 +25,7 @@ public class IronBattleAxeToolItem extends MCFantasticaElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new SwordItem(new IItemTier() {
 			public int getMaxUses() {
-				return 255;
+				return 305;
 			}
 
 			public float getEfficiency() {
@@ -33,7 +33,7 @@ public class IronBattleAxeToolItem extends MCFantasticaElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 9f;
+				return 7f;
 			}
 
 			public int getHarvestLevel() {
