@@ -47,7 +47,7 @@ public class IronBattleAxeToolItem extends MCFantasticaElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(Items.IRON_INGOT, (int) (1)));
 			}
-		}, 3, -3.4f, new Item.Properties().group(ItemGroup.COMBAT)) {
+		}, 3, -3.25f, new Item.Properties().group(ItemGroup.COMBAT)) {
 		}.setRegistryName("ironbattleaxetool"));
 	}
 }
