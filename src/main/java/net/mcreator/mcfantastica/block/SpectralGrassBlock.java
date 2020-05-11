@@ -2,6 +2,7 @@
 package net.mcreator.mcfantastica.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -39,7 +40,8 @@ public class SpectralGrassBlock extends MCFantasticaElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.SNOW).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.SNOW).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1)
+					.harvestTool(ToolType.SHOVEL));
 			setRegistryName("spectralgrass");
 		}
 
