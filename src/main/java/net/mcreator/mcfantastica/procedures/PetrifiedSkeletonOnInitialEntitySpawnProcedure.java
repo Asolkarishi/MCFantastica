@@ -39,7 +39,7 @@ public class PetrifiedSkeletonOnInitialEntitySpawnProcedure extends MCFantastica
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		for (int index0 = 0; index0 < (int) (1e+37); index0++) {
+		for (int index0 = 0; index0 < (int) (10); index0++) {
 			if ((world.canBlockSeeSky(new BlockPos((int) x, (int) (y + 1), (int) z)))) {
 				if (((world.isDaytime()) && (!((world.isRaining()) || (world.isThundering()))))) {
 					if ((!(((((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.BUBBLE_COLUMN
