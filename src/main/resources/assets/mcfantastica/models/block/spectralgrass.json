@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mcfantastica:blocks/blank",
+    "up": "mcfantastica:blocks/spectralgrasstop",
+    "north": "mcfantastica:blocks/spectralgrassyside",
+    "east": "mcfantastica:blocks/spectralgrassyside",
+    "south": "mcfantastica:blocks/spectralgrassyside",
+    "west": "mcfantastica:blocks/spectralgrassyside",
+    "particle": "mcfantastica:blocks/blank"
+  }
+}
