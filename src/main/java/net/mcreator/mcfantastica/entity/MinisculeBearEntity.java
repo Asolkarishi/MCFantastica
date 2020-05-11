@@ -20,6 +20,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -28,17 +29,20 @@ import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.Pose;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
+import net.minecraft.entity.EntitySize;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.entity.AgeableEntity;
 import net.minecraft.client.renderer.entity.model.PigModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
@@ -86,12 +90,12 @@ public class MinisculeBearEntity extends MCFantasticaElements.ModElement {
 		RenderingRegistry.registerEntityRenderingHandler(CustomEntity.class, renderManager -> {
 			return new MobRenderer(renderManager, new PigModel(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("mcfantastica:textures/bear.png_1.png");
+					return new ResourceLocation("mcfantastica:textures/bearoror.png");
 				}
 			};
 		});
 	}
-	public static class CustomEntity extends CreatureEntity {
+	public static class CustomEntity extends AnimalEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -106,11 +110,12 @@ public class MinisculeBearEntity extends MCFantasticaElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
-			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(3, new SwimGoal(this));
-			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.8));
-			this.goalSelector.addGoal(5, new PanicGoal(this, 1.2));
-			this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PetrifiedSkeletonEntity.CustomEntity.class, true, true));
+			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(4, new SwimGoal(this));
+			this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.8));
+			this.goalSelector.addGoal(6, new PanicGoal(this, 1.2));
+			this.targetSelector.addGoal(7, new HurtByTargetGoal(this));
 		}
 
 		@Override
@@ -165,6 +170,51 @@ public class MinisculeBearEntity extends MCFantasticaElements.ModElement {
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) != null)
 				this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+		}
+
+		@Override
+		public AgeableEntity createChild(AgeableEntity ageable) {
+			return (CustomEntity) entity.create(this.world);
+		}
+
+		@Override
+		public float getStandingEyeHeight(Pose pose, EntitySize size) {
+			return this.isChild() ? size.height : 1.3F;
+		}
+
+		@Override
+		public boolean isBreedingItem(ItemStack stack) {
+			if (stack == null)
+				return false;
+			if (new ItemStack(Items.COOKED_BEEF, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.COOKED_CHICKEN, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.COOKED_MUTTON, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.COOKED_PORKCHOP, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.COOKED_RABBIT, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.COOKED_COD, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.COOKED_SALMON, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.COD, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.SALMON, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.PORKCHOP, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.BEEF, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.CHICKEN, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.RABBIT, (int) (1)).getItem() == stack.getItem())
+				return true;
+			if (new ItemStack(Items.MUTTON, (int) (1)).getItem() == stack.getItem())
+				return true;
+			return false;
 		}
 
 		@Override

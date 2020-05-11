@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Miniscule Bear",
     "mobLabel": "",
-    "mobModelTexture": "bear.png_1.png",
+    "mobModelTexture": "bearoror.png",
     "mobModelName": "Pig",
     "modelWidth": 0.9,
     "modelHeight": 0.9,
@@ -43,7 +43,7 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "movementSpeed": 0.3,
@@ -85,10 +85,53 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "hasAI": true,
-    "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"><next><block type=\"leap_at_target\"><field name=\"speed\">0.8</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
-    "breedTriggerItems": [],
+    "aiBase": "Wolf",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:PetrifiedSkeleton</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"><next><block type=\"leap_at_target\"><field name=\"speed\">0.8</field><next><block type=\"panic_when_attacked\"><field name=\"speed\">1.2</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
+    "breedTriggerItems": [
+      {
+        "value": "Items.COOKED_BEEF"
+      },
+      {
+        "value": "Items.COOKED_CHICKEN"
+      },
+      {
+        "value": "Items.COOKED_MUTTON"
+      },
+      {
+        "value": "Items.COOKED_PORKCHOP"
+      },
+      {
+        "value": "Items.COOKED_RABBIT"
+      },
+      {
+        "value": "Items.COOKED_FISH#0"
+      },
+      {
+        "value": "Items.COOKED_FISH#1"
+      },
+      {
+        "value": "Items.FISH#0"
+      },
+      {
+        "value": "Items.FISH#1"
+      },
+      {
+        "value": "Items.PORKCHOP"
+      },
+      {
+        "value": "Items.BEEF"
+      },
+      {
+        "value": "Items.CHICKEN"
+      },
+      {
+        "value": "Items.RABBIT"
+      },
+      {
+        "value": "Items.MUTTON"
+      }
+    ],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""
