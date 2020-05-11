@@ -60,6 +60,8 @@ public class PetrifiedSkeletonOnInitialEntitySpawnProcedure extends MCFantastica
 					}
 				}
 			}
+		} else {
+			entity.extinguish();
 		}
 	}
 }
