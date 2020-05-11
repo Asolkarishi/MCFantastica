@@ -502,14 +502,6 @@
       "ids": {}
     },
     {
-      "name": "IronBattleaxe",
-      "type": "item",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "DeathBone",
       "type": "item",
       "sortid": 58,
@@ -593,7 +585,7 @@
       "name": "BloodWoodPlank",
       "type": "block",
       "sortid": 65,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {}
     },
@@ -609,7 +601,7 @@
       "name": "BloodWoodSlab",
       "type": "block",
       "sortid": 67,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {}
     },
@@ -617,7 +609,7 @@
       "name": "IronBattleAxeTool",
       "type": "tool",
       "sortid": 64,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {}
     },
@@ -626,14 +618,6 @@
       "type": "recipe",
       "sortid": 66,
       "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Phoenix",
-      "type": "mob",
-      "sortid": 64,
-      "compiles": false,
       "locked_code": false,
       "ids": {}
     }
@@ -648,7 +632,6 @@
       "item.mcfantastica.cobaltaxe": "Cobalt Axe",
       "item.mcfantastica.deathbone": "Death Bone",
       "item.mcfantastica.silverarmorhelmet": "Silver Helmet",
-      "item.mcfantastica.ironbattleaxe": "Iron Battleaxe",
       "fluid.frosting": "Frosting",
       "block.mcfantastica.silverore": "Silver Ore",
       "item.mcfantastica.silverarmorboots": "Silver Boots",
@@ -658,11 +641,13 @@
       "item.mcfantastica.silveraxe": "Silver Axe",
       "item.mcfantastica.silverpickaxe": "Silver Pickaxe",
       "item.mcfantastica.cobaltarmorbody": "Cobalt Chestplate",
+      "block.mcfantastica.bloodwoodslab": "Blood Wood Slab",
       "item.mcfantastica.petrifiedskeleton": "Petrified Skeleton Spawn Egg",
       "block.mcfantastica.cobaltoreblock": "Block of Cobalt",
       "item.mcfantastica.cobaltarmorlegs": "Cobalt Leggings",
       "item.mcfantastica.petrifiedbone": "Petrified Bone",
       "item.mcfantastica.silverarmorbody": "Silver Chestplate",
+      "block.mcfantastica.bloodwoodplank": "Blood Wood Plank",
       "item.mcfantastica.silveredcobalt": "Silvered Cobalt",
       "item.mcfantastica.silveringot": "Silver",
       "item.mcfantastica.cobaltpickaxe": "Cobalt Pickaxe",
@@ -682,6 +667,7 @@
       "item.mcfantastica.silveredcobalthiltitem": "Silvered Cobalt Hilt",
       "item.mcfantastica.ironhammer": "Iron Hammer",
       "block.mcfantastica.cobaltore": "Cobalt Ore",
+      "item.mcfantastica.ironbattleaxetool": "Iron Battle Axe",
       "item.mcfantastica.cobalthoe": "Cobalt Hoe",
       "item.mcfantastica.cobaltarmorboots": "Cobalt Boots",
       "item.mcfantastica.cobaltingot": "Cobalt",
