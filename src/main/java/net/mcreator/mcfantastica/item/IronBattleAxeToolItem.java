@@ -1,22 +1,12 @@
 
 package net.mcreator.mcfantastica.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.IItemTier;
-
-import net.mcreator.mcfantastica.MCFantasticaElements;
-
 @MCFantasticaElements.ModElement.Tag
 public class IronBattleAxeToolItem extends MCFantasticaElements.ModElement {
+
 	@ObjectHolder("mcfantastica:ironbattleaxetool")
 	public static final Item block = null;
+
 	public IronBattleAxeToolItem(MCFantasticaElements instance) {
 		super(instance, 64);
 	}
@@ -48,6 +38,8 @@ public class IronBattleAxeToolItem extends MCFantasticaElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(Items.IRON_INGOT, (int) (1)));
 			}
 		}, 3, -3.4f, new Item.Properties().group(ItemGroup.COMBAT)) {
+
 		}.setRegistryName("ironbattleaxetool"));
 	}
+
 }
