@@ -18,13 +18,13 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:BloodWoodPlank"
+        "value": "CUSTOM:BloodWoodBark"
       },
       {
-        "value": "CUSTOM:BloodWoodPlank"
+        "value": "CUSTOM:BloodWoodBark"
       },
       {
-        "value": "CUSTOM:BloodWoodPlank"
+        "value": "CUSTOM:BloodWoodBark"
       },
       {
         "value": ""
@@ -37,9 +37,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:BloodWoodSlab"
+      "value": "CUSTOM:BloodWoodBarkSlab"
     },
-    "name": "bloodwoodslabrecipe",
+    "name": "bloodwoodbarkslabrecipe",
     "namespace": "mod"
   }
 }

@@ -6,17 +6,17 @@
   ],
   "key": {
     "0": {
-      "item": "mcfantastica:bloodwoodplank"
+      "item": "mcfantastica:bloodwoodbark"
     },
     "1": {
-      "item": "mcfantastica:bloodwoodplank"
+      "item": "mcfantastica:bloodwoodbark"
     },
     "2": {
-      "item": "mcfantastica:bloodwoodplank"
+      "item": "mcfantastica:bloodwoodbark"
     }
   },
   "result": {
-    "item": "mcfantastica:bloodwoodslab",
+    "item": "mcfantastica:bloodwoodbarkslab",
     "count": 6
   }
 }
