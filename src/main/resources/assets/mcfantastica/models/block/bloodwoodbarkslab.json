@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "mcfantastica:blocks/bloodwoodbark",
+    "top": "mcfantastica:blocks/bloodwoodbark",
+    "side": "mcfantastica:blocks/bloodwoodbark"
+  }
+}

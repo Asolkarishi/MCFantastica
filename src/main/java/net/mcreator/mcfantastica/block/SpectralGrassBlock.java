@@ -2,8 +2,13 @@
 package net.mcreator.mcfantastica.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -36,6 +41,17 @@ public class SpectralGrassBlock extends MCFantasticaElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.SNOW).hardnessAndResistance(1f, 10f).lightValue(0));
 			setRegistryName("spectralgrass");
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public BlockRenderLayer getRenderLayer() {
+			return BlockRenderLayer.CUTOUT;
+		}
+
+		@Override
+		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return false;
 		}
 
 		@Override

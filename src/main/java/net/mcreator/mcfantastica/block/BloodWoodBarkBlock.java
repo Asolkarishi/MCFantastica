@@ -2,13 +2,9 @@
 package net.mcreator.mcfantastica.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -24,11 +20,11 @@ import java.util.List;
 import java.util.Collections;
 
 @MCFantasticaElements.ModElement.Tag
-public class BloodLeavesBlock extends MCFantasticaElements.ModElement {
-	@ObjectHolder("mcfantastica:bloodleaves")
+public class BloodWoodBarkBlock extends MCFantasticaElements.ModElement {
+	@ObjectHolder("mcfantastica:bloodwoodbark")
 	public static final Block block = null;
-	public BloodLeavesBlock(MCFantasticaElements instance) {
-		super(instance, 4);
+	public BloodWoodBarkBlock(MCFantasticaElements instance) {
+		super(instance, 70);
 	}
 
 	@Override
@@ -39,19 +35,9 @@ public class BloodLeavesBlock extends MCFantasticaElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("bloodleaves");
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public BlockRenderLayer getRenderLayer() {
-			return BlockRenderLayer.CUTOUT;
-		}
-
-		@Override
-		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
-			return false;
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(2)
+					.harvestTool(ToolType.AXE));
+			setRegistryName("bloodwoodbark");
 		}
 
 		@Override
@@ -59,7 +45,7 @@ public class BloodLeavesBlock extends MCFantasticaElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 0));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 }

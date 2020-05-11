@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcfantastica:block/bloodwoodbarkslab"
+    },
+    "type=top": {
+      "model": "mcfantastica:block/bloodwoodbarkslab_top"
+    },
+    "type=double": {
+      "model": "mcfantastica:block/bloodwoodbarkslab_full"
+    }
+  }
+}

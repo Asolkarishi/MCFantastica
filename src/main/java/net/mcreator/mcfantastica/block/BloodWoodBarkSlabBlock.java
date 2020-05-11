@@ -2,6 +2,7 @@
 package net.mcreator.mcfantastica.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -9,12 +10,14 @@ import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.state.properties.SlabType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -24,11 +27,11 @@ import java.util.List;
 import java.util.Collections;
 
 @MCFantasticaElements.ModElement.Tag
-public class BloodLeavesBlock extends MCFantasticaElements.ModElement {
-	@ObjectHolder("mcfantastica:bloodleaves")
+public class BloodWoodBarkSlabBlock extends MCFantasticaElements.ModElement {
+	@ObjectHolder("mcfantastica:bloodwoodbarkslab")
 	public static final Block block = null;
-	public BloodLeavesBlock(MCFantasticaElements instance) {
-		super(instance, 4);
+	public BloodWoodBarkSlabBlock(MCFantasticaElements instance) {
+		super(instance, 71);
 	}
 
 	@Override
@@ -37,10 +40,11 @@ public class BloodLeavesBlock extends MCFantasticaElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("bloodleaves");
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(2)
+					.harvestTool(ToolType.AXE));
+			setRegistryName("bloodwoodbarkslab");
 		}
 
 		@OnlyIn(Dist.CLIENT)
@@ -55,11 +59,16 @@ public class BloodLeavesBlock extends MCFantasticaElements.ModElement {
 		}
 
 		@Override
+		public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
+			return true;
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 0));
+			return Collections.singletonList(new ItemStack(this, state.get(TYPE) == SlabType.DOUBLE ? 2 : 1));
 		}
 	}
 }
