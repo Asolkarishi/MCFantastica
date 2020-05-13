@@ -700,6 +700,22 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "BlackSand",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BlackDesert",
+      "type": "biome",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -724,6 +740,7 @@
       "item.mcfantastica.cobaltsword": "Cobalt Sword",
       "item.mcfantastica.bloodinbottle": "Blood In Bottle",
       "item.mcfantastica.silverhoe": "Silver Hoe",
+      "biome.mcfantastica.blackdesert": "Black Desert",
       "item.mcfantastica.silverarmorlegs": "Silver Leggings",
       "block.mcfantastica.silveroreblock": "Block of Silver",
       "entity.mcfantastica.minisculebear": "Miniscule Bear",
@@ -747,6 +764,7 @@
       "item.mcfantastica.silveredcobalt": "Silvered Cobalt",
       "item.mcfantastica.cobaltpickaxe": "Cobalt Pickaxe",
       "item.mcfantastica.cobaltshovel": "Cobalt Shovel",
+      "block.mcfantastica.blacksand": "Black Sand",
       "item.mcfantastica.cobaltarmorhelmet": "Cobalt Helmet",
       "entity.mcfantastica.petrifiedskeleton": "Petrified Skeleton",
       "block.mcfantastica.bloodpeat": "Blood Peat",

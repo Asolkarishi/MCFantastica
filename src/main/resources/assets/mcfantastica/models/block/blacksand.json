@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mcfantastica:blocks/blackysand",
+    "up": "mcfantastica:blocks/blackysand",
+    "north": "mcfantastica:blocks/blackysand",
+    "east": "mcfantastica:blocks/blackysand",
+    "south": "mcfantastica:blocks/blackysand",
+    "west": "mcfantastica:blocks/blackysand",
+    "particle": "mcfantastica:blocks/blackysand"
+  }
+}
