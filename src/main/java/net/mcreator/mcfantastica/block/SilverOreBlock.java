@@ -81,7 +81,7 @@ public class SilverOreBlock extends MCFantasticaElements.ModElement {
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 5), Placement.COUNT_RANGE, new CountRangeConfig(4, 9, 9, 22)));
+			}), block.getDefaultState(), 3), Placement.COUNT_RANGE, new CountRangeConfig(6, 6, 6, 26)));
 		}
 	}
 }
