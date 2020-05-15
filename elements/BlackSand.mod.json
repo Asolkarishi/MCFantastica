@@ -28,8 +28,8 @@
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "shovel",
-    "affectedBySilkTouch": false,
+    "destroyTool": "Not specified",
+    "affectedBySilkTouch": true,
     "customDrop": {
       "value": ""
     },

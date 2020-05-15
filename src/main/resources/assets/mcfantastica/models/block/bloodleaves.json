@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "mcfantastica:blocks/bloodleaf",
-    "up": "mcfantastica:blocks/bloodleaf",
-    "north": "mcfantastica:blocks/bloodleaf",
-    "east": "mcfantastica:blocks/bloodleaf",
-    "south": "mcfantastica:blocks/bloodleaf",
-    "west": "mcfantastica:blocks/bloodleaf",
+    "all": "mcfantastica:blocks/bloodleaf",
     "particle": "mcfantastica:blocks/bloodleaf"
   }
 }
