@@ -470,30 +470,6 @@
       "ids": {}
     },
     {
-      "name": "Donut",
-      "type": "food",
-      "sortid": 54,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Frosting",
-      "type": "fluid",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "DonutRecipe",
-      "type": "recipe",
-      "sortid": 56,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "DeathBone",
       "type": "item",
       "sortid": 58,
@@ -540,14 +516,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "FrostingRecipe",
-      "type": "recipe",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
     },
     {
       "name": "PetrifiedPowder",
@@ -727,20 +695,19 @@
       "item.mcfantastica.silversword": "Silver Sword",
       "item.mcfantastica.deathbone": "Death Bone",
       "block.mcfantastica.bloodwoodbarkslab": "Blood Wood Bark Slab",
-      "fluid.frosting": "Frosting",
-      "item.mcfantastica.silvershovel": "Silver Shovel",
       "biome.mcfantastica.bloodswamp": "Blood Swamp",
+      "item.mcfantastica.silvershovel": "Silver Shovel",
       "item.mcfantastica.silveraxe": "Silver Axe",
       "block.mcfantastica.bloodwoodslab": "Blood Wood Slab",
       "block.mcfantastica.cobaltoreblock": "Block of Cobalt",
-      "item.mcfantastica.silverarmorbody": "Silver Chestplate",
       "item.mcfantastica.petrifiedbone": "Petrified Bone",
+      "item.mcfantastica.silverarmorbody": "Silver Chestplate",
       "item.mcfantastica.minisculebear": "Miniscule Bear Spawn Egg",
       "item.mcfantastica.silveringot": "Silver",
       "item.mcfantastica.cobaltsword": "Cobalt Sword",
       "item.mcfantastica.bloodinbottle": "Blood In Bottle",
-      "biome.mcfantastica.blackdesert": "Black Desert",
       "item.mcfantastica.silverhoe": "Silver Hoe",
+      "biome.mcfantastica.blackdesert": "Black Desert",
       "item.mcfantastica.silverarmorlegs": "Silver Leggings",
       "block.mcfantastica.silveroreblock": "Block of Silver",
       "entity.mcfantastica.minisculebear": "Miniscule Bear",
@@ -749,7 +716,6 @@
       "item.mcfantastica.ironbattleaxetool": "Iron Battle Axe",
       "item.mcfantastica.cobalthoe": "Cobalt Hoe",
       "item.mcfantastica.cobaltarmorboots": "Cobalt Boots",
-      "item.mcfantastica.donut": "Donut",
       "block.mcfantastica.bloodstone": "Blood Stone",
       "item.mcfantastica.cobaltaxe": "Cobalt Axe",
       "item.mcfantastica.silverarmorhelmet": "Silver Helmet",
@@ -771,7 +737,6 @@
       "block.mcfantastica.bloodwoodbark": "Blood Wood Bark",
       "block.mcfantastica.spectralgrass": "Spectral Grass",
       "item.mcfantastica.blooddrop": "Blood Drop",
-      "item.mcfantastica.frosting_bucket": "Frosting Bucket",
       "item.mcfantastica.ironhammer": "Iron Hammer",
       "block.mcfantastica.cobaltore": "Cobalt Ore",
       "item.mcfantastica.cobaltingot": "Cobalt"
