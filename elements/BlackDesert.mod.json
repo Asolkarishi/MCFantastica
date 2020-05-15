@@ -60,7 +60,10 @@
     "parent": {
       "value": "No parent"
     },
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "SANDY",
+      "DRY"
+    ],
     "spawnList": []
   }
 }
