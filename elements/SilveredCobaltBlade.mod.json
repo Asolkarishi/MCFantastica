@@ -37,7 +37,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SilveredCobaltBladeItem"
+      "value": "CUSTOM:BladeOfIce"
     },
     "name": "silveredcobaltblade",
     "namespace": "mod"
