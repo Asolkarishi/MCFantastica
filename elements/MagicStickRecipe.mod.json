@@ -12,34 +12,34 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:SilveredCobalt"
+        "value": "Blocks.TALLGRASS#1"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
       },
       {
         "value": ""
       },
       {
+        "value": "CUSTOM:BloodWoodStick"
+      },
+      {
+        "value": "Blocks.TALLGRASS#1"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
         "value": ""
-      },
-      {
-        "value": "CUSTOM:MagicStick"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SilveredCobaltHiltItem"
+      "value": "CUSTOM:MagicStick"
     },
-    "name": "silveredcobalthilt",
+    "name": "magicstickrecipe",
     "namespace": "mod"
   }
 }
