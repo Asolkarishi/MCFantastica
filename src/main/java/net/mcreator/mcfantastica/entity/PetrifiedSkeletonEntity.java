@@ -66,7 +66,8 @@ public class PetrifiedSkeletonEntity extends MCFantasticaElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("petrifiedskeleton")
 						.setRegistryName("petrifiedskeleton");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("petrifiedskeleton"));
+		elements.items.add(() -> new SpawnEggItem(entity, -13684945, -8820889, new Item.Properties().group(ItemGroup.MISC))
+				.setRegistryName("petrifiedskeleton"));
 	}
 
 	@Override
