@@ -751,6 +751,7 @@
       "item.mcfantastica.silversword": "Silver Sword",
       "item.mcfantastica.deathbone": "Death Bone",
       "block.mcfantastica.bloodwoodbarkslab": "Blood Wood Bark Slab",
+      "block.mcfantastica.shatteredstonebrickstairs": "Shattered Stone Brick Stairs",
       "item.mcfantastica.silvershovel": "Silver Shovel",
       "biome.mcfantastica.bloodswamp": "Blood Swamp",
       "item.mcfantastica.silveraxe": "Silver Axe",
@@ -790,12 +791,14 @@
       "block.mcfantastica.blacksand": "Black Sand",
       "item.mcfantastica.cobaltarmorhelmet": "Cobalt Helmet",
       "entity.mcfantastica.petrifiedskeleton": "Petrified Skeleton",
+      "block.mcfantastica.shatteredstonebrickblock": "Shattered Stone Brick Block",
       "block.mcfantastica.bloodpeat": "Blood Peat",
       "block.mcfantastica.bloodwoodbark": "Blood Wood Bark",
       "block.mcfantastica.spectralgrass": "Spectral Grass",
       "item.mcfantastica.blooddrop": "Blood Drop",
       "item.mcfantastica.ironhammer": "Iron Hammer",
       "block.mcfantastica.cobaltore": "Cobalt Ore",
+      "block.mcfantastica.shatteredstonebrickslab": "Shattered Stone Brick Slab",
       "item.mcfantastica.cobaltingot": "Cobalt",
       "item.mcfantastica.magicstick": "Magical Stick"
     }
