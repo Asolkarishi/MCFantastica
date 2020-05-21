@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "mcfantastica:bloodinbottle"
+    },
+    "title": {
+      "translate": "advancements.demiseinabottle.title"
+    },
+    "description": {
+      "translate": "advancements.demiseinabottle.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "demiseinabottle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "mcfantastica:bloodinbottle"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "minecraft:story/root"
+}

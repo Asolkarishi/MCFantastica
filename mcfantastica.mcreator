@@ -684,6 +684,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "DemiseInABottle",
+      "type": "achievement",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -725,8 +733,10 @@
       "item.mcfantastica.silverpickaxe": "Silver Pickaxe",
       "item.mcfantastica.cobaltarmorbody": "Cobalt Chestplate",
       "item.mcfantastica.petrifiedskeleton": "Petrified Skeleton Spawn Egg",
+      "advancements.demiseinabottle.title": "Demise In A Bottle",
       "item.mcfantastica.cobaltarmorlegs": "Cobalt Leggings",
       "block.mcfantastica.bloodwoodplank": "Blood Wood Plank",
+      "advancements.demiseinabottle.descr": "No, don\u0027t drink it...",
       "item.mcfantastica.silveredcobalt": "Silvered Cobalt",
       "item.mcfantastica.cobaltpickaxe": "Cobalt Pickaxe",
       "item.mcfantastica.cobaltshovel": "Cobalt Shovel",
