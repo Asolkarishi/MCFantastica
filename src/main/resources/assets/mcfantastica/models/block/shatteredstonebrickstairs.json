@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "mcfantastica:blocks/shatteredstonebrickside",
+    "top": "mcfantastica:blocks/shatteredstonebrickside",
+    "side": "mcfantastica:blocks/shatteredstonebrickside"
+  }
+}
