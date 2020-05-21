@@ -12,7 +12,7 @@
     "generateLakes": true,
     "treeType": 1,
     "vanillaTreeType": "Default",
-    "minHeight": 10,
+    "minHeight": 6,
     "spawnVines": false,
     "treeVines": {
       "value": "CUSTOM:BloodLeaves"
@@ -54,7 +54,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
-    "biomeWeight": 1,
+    "biomeWeight": 3,
     "biomeType": "WARM",
     "biomeCategory": "NONE",
     "parent": {

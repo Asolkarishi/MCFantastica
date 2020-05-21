@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "xpReward": 0.0,
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 4,
     "group": "",
     "recipeShapeless": false,
     "recipeSlots": [
@@ -12,7 +12,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:SilveredCobalt"
+        "value": "CUSTOM:BloodWoodPlank"
       },
       {
         "value": ""
@@ -21,7 +21,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:MagicStick"
+        "value": "CUSTOM:BloodWoodPlank"
       },
       {
         "value": ""
@@ -30,16 +30,16 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:SilverIngot"
+        "value": ""
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SilveredCobaltHiltItem"
+      "value": "CUSTOM:BloodWoodStick"
     },
-    "name": "silveredcobalthilt",
+    "name": "bloodwoodstickrecipe",
     "namespace": "mod"
   }
 }

@@ -2,7 +2,7 @@
   "_fv": 6,
   "_type": "block",
   "definition": {
-    "texture": "cobalt_ore",
+    "texture": "shatteredstonebrickside",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -20,16 +20,16 @@
     "My": 1.0,
     "Mz": 1.0,
     "faceShape": "SOLID",
-    "name": "Cobalt Ore",
+    "name": "Shattered Stone Brick Block",
     "specialInfo": [],
-    "hardness": 3.0,
-    "resistance": 5.0,
+    "hardness": 2.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
     "destroyTool": "pickaxe",
-    "affectedBySilkTouch": true,
+    "affectedBySilkTouch": false,
     "customDrop": {
       "value": ""
     },
@@ -56,11 +56,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "GROUND"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -77,18 +77,12 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
-    "spawnWorldTypes": [
-      "Surface"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [
-      {
-        "value": "Blocks.STONE"
-      }
-    ],
-    "frequencyPerChunks": 4,
-    "frequencyOnChunk": 8,
-    "minGenerateHeight": 7,
-    "maxGenerateHeight": 46
+    "blocksToReplace": [],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }

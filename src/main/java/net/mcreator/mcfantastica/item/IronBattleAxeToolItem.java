@@ -33,7 +33,7 @@ public class IronBattleAxeToolItem extends MCFantasticaElements.ModElement {
 			}
 
 			public float getAttackDamage() {
-				return 7f;
+				return 10.5f;
 			}
 
 			public int getHarvestLevel() {

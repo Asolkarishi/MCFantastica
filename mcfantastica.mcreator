@@ -692,6 +692,62 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "BloodWoodStick",
+      "type": "item",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BloodWoodStickRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ShatteredStoneBrickSlab",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MagicStick",
+      "type": "item",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MagicStickRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ShatteredStoneBrickBlock",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ShatteredStoneBrickStairs",
+      "type": "block",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -703,19 +759,19 @@
       "item.mcfantastica.silversword": "Silver Sword",
       "item.mcfantastica.deathbone": "Death Bone",
       "block.mcfantastica.bloodwoodbarkslab": "Blood Wood Bark Slab",
-      "biome.mcfantastica.bloodswamp": "Blood Swamp",
       "item.mcfantastica.silvershovel": "Silver Shovel",
+      "biome.mcfantastica.bloodswamp": "Blood Swamp",
       "item.mcfantastica.silveraxe": "Silver Axe",
       "block.mcfantastica.bloodwoodslab": "Blood Wood Slab",
       "block.mcfantastica.cobaltoreblock": "Block of Cobalt",
-      "item.mcfantastica.petrifiedbone": "Petrified Bone",
       "item.mcfantastica.silverarmorbody": "Silver Chestplate",
+      "item.mcfantastica.petrifiedbone": "Petrified Bone",
       "item.mcfantastica.minisculebear": "Miniscule Bear Spawn Egg",
       "item.mcfantastica.silveringot": "Silver",
       "item.mcfantastica.cobaltsword": "Cobalt Sword",
       "item.mcfantastica.bloodinbottle": "Blood In Bottle",
-      "item.mcfantastica.silverhoe": "Silver Hoe",
       "biome.mcfantastica.blackdesert": "Black Desert",
+      "item.mcfantastica.silverhoe": "Silver Hoe",
       "item.mcfantastica.silverarmorlegs": "Silver Leggings",
       "block.mcfantastica.silveroreblock": "Block of Silver",
       "entity.mcfantastica.minisculebear": "Miniscule Bear",
@@ -733,10 +789,8 @@
       "item.mcfantastica.silverpickaxe": "Silver Pickaxe",
       "item.mcfantastica.cobaltarmorbody": "Cobalt Chestplate",
       "item.mcfantastica.petrifiedskeleton": "Petrified Skeleton Spawn Egg",
-      "advancements.demiseinabottle.title": "Demise In A Bottle",
       "item.mcfantastica.cobaltarmorlegs": "Cobalt Leggings",
       "block.mcfantastica.bloodwoodplank": "Blood Wood Plank",
-      "advancements.demiseinabottle.descr": "No, don\u0027t drink it...",
       "item.mcfantastica.silveredcobalt": "Silvered Cobalt",
       "item.mcfantastica.cobaltpickaxe": "Cobalt Pickaxe",
       "item.mcfantastica.cobaltshovel": "Cobalt Shovel",

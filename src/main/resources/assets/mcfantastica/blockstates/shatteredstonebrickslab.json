@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcfantastica:block/shatteredstonebrickslab"
+    },
+    "type=top": {
+      "model": "mcfantastica:block/shatteredstonebrickslab_top"
+    },
+    "type=double": {
+      "model": "mcfantastica:block/shatteredstonebrickslab_full"
+    }
+  }
+}
