@@ -17,7 +17,7 @@
     "destroyAnyBlock": false,
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": false,
-    "damageVsEntity": 0.0,
+    "damageVsEntity": 1.0,
     "specialInfo": [],
     "hasGlow": false
   }

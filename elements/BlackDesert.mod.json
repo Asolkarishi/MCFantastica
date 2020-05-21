@@ -54,7 +54,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": true,
-    "biomeWeight": 2,
+    "biomeWeight": 3,
     "biomeType": "DESERT",
     "biomeCategory": "DESERT",
     "parent": {
