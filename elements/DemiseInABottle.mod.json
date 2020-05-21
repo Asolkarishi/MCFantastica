@@ -20,6 +20,6 @@
     "parent": {
       "value": "story/root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"65\" y=\"51\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:BloodInBottle</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"25\" y=\"90\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:BloodInBottle</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
   }
 }
