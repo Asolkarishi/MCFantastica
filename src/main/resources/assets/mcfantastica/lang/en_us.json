@@ -11,6 +11,7 @@
   "block.mcfantastica.cobaltoreblock": "Block of Cobalt",
   "item.mcfantastica.silverarmorbody": "Silver Chestplate",
   "item.mcfantastica.petrifiedbone": "Petrified Bone",
+  "item.mcfantastica.bloodwoodstick": "Blood Wood Stick",
   "item.mcfantastica.minisculebear": "Miniscule Bear Spawn Egg",
   "item.mcfantastica.silveringot": "Silver",
   "item.mcfantastica.cobaltsword": "Cobalt Sword",
@@ -48,5 +49,6 @@
   "item.mcfantastica.blooddrop": "Blood Drop",
   "item.mcfantastica.ironhammer": "Iron Hammer",
   "block.mcfantastica.cobaltore": "Cobalt Ore",
-  "item.mcfantastica.cobaltingot": "Cobalt"
+  "item.mcfantastica.cobaltingot": "Cobalt",
+  "item.mcfantastica.magicstick": "Magical Stick"
 }
