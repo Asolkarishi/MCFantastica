@@ -1,15 +1,35 @@
 
 package net.mcreator.mcfantastica.block;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.BlockItem;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
+
+import net.mcreator.mcfantastica.MCFantasticaElements;
+
+import java.util.List;
+import java.util.Collections;
+
 @MCFantasticaElements.ModElement.Tag
 public class ShatteredStoneBrickStairsBlock extends MCFantasticaElements.ModElement {
-
 	@ObjectHolder("mcfantastica:shatteredstonebrickstairs")
 	public static final Block block = null;
-
 	public ShatteredStoneBrickStairsBlock(MCFantasticaElements instance) {
 		super(instance, 84);
-
 	}
 
 	@Override
@@ -18,14 +38,10 @@ public class ShatteredStoneBrickStairsBlock extends MCFantasticaElements.ModElem
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
-
 	public static class CustomBlock extends StairsBlock {
-
 		public CustomBlock() {
 			super(new Block(Block.Properties.create(Material.ROCK)).getDefaultState(),
-
 					Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
-
 			setRegistryName("shatteredstonebrickstairs");
 		}
 
@@ -52,7 +68,5 @@ public class ShatteredStoneBrickStairsBlock extends MCFantasticaElements.ModElem
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
-
 	}
-
 }

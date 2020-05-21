@@ -1,12 +1,19 @@
 
 package net.mcreator.mcfantastica.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.mcfantastica.MCFantasticaElements;
+
 @MCFantasticaElements.ModElement.Tag
 public class BloodWoodStickItem extends MCFantasticaElements.ModElement {
-
 	@ObjectHolder("mcfantastica:bloodwoodstick")
 	public static final Item block = null;
-
 	public BloodWoodStickItem(MCFantasticaElements instance) {
 		super(instance, 78);
 	}
@@ -15,9 +22,7 @@ public class BloodWoodStickItem extends MCFantasticaElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
-
 	public static class ItemCustom extends Item {
-
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64));
 			setRegistryName("bloodwoodstick");
@@ -37,7 +42,5 @@ public class BloodWoodStickItem extends MCFantasticaElements.ModElement {
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
 		}
-
 	}
-
 }
