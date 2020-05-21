@@ -44,18 +44,155 @@ public class SilveredCobaltHitProcedureProcedure extends MCFantasticaElements.Mo
 		World world = (World) dependencies.get("world");
 		if (entity instanceof LivingEntity)
 			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 50, (int) 2));
-		world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x + 2), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 2)), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x - 2), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 2)), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)), Blocks.SNOW.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
+		if ((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) (x + 2), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) (x + 2), (int) y, (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) (x + 2), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) (x + 2), (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x + 2), (int) (y - 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) (x + 2), (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) (x + 2), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 2)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 2)))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 2)))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 2)))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 2)))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z + 2)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z + 2)), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) (x - 2), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) (x - 2), (int) y, (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) (x - 2), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) (x - 2), (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x - 2), (int) (y - 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) (x - 2), (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) (x - 2), (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 2)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 2)))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 2)))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 2)))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 2)))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) (z - 2)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) (z - 2)), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+						.getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+						.getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.VOID_AIR
+								.getDefaultState().getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR
+								.getDefaultState().getBlock()))))) {
+			world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z + 1)), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+						.getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+						.getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.VOID_AIR
+								.getDefaultState().getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR
+								.getDefaultState().getBlock()))))) {
+			world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z + 1)), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+						.getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+						.getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.VOID_AIR
+								.getDefaultState().getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR
+								.getDefaultState().getBlock()))))) {
+			world.setBlockState(new BlockPos((int) (x + 1), (int) y, (int) (z - 1)), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+						.getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+						.getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState()
+						.getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.VOID_AIR
+								.getDefaultState().getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR
+								.getDefaultState().getBlock()))))) {
+			world.setBlockState(new BlockPos((int) (x - 1), (int) y, (int) (z - 1)), Blocks.SNOW.getDefaultState(), 3);
+		}
+		if ((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock()))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				&& (!((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock()))
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+								.getBlock()))))) {
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.SNOW.getDefaultState(), 3);
+		}
 	}
 }
